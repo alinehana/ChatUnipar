@@ -78,3 +78,18 @@ O sistema utiliza **WebSocket** com **SockJS** e **STOMP (Simple Text Oriented M
 - ✅ Enviar e visualizar mensagens em tempo real
 - ✅ Layout responsivo
 - ✅ Estilo visual moderno, limpo e coerente
+
+---
+
+### 🔁 Canais utilizados
+
+| Tipo         | Caminho               | Descrição                                     |
+|--------------|------------------------|-----------------------------------------------|
+| **subscribe** | `/topic/public`        | Canal público para receber mensagens           |
+| **send**      | `/app/addUser`         | Adiciona usuário ao chat                       |
+| **send**      | `/app/sendMessage`     | Envia mensagem para todos no canal             |
+| **send**      | `/app/leaveUser`       | Notifica saída do usuário                      |
+
+---
+
+Essa estrutura garante uma comunicação eficiente e em tempo real com feedback visual na interface, promovendo uma experiência de usuário fluida e envolvente.
